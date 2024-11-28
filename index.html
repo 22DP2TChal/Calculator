@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulators</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Matemātiskais Kalkulators</h1>
+        <input type="text" id="input" readonly placeholder="Ievadiet izteiksmi...">
+        <div class="buttons">
+            <button onclick="appendToInput('7')">7</button>
+            <button onclick="appendToInput('8')">8</button>
+            <button onclick="appendToInput('9')">9</button>
+            <button onclick="appendToInput('/')">/</button>
+            <button onclick="appendToInput('4')">4</button>
+            <button onclick="appendToInput('5')">5</button>
+            <button onclick="appendToInput('6')">6</button>
+            <button onclick="appendToInput('*')">*</button>
+            <button onclick="appendToInput('1')">1</button>
+            <button onclick="appendToInput('2')">2</button>
+            <button onclick="appendToInput('3')">3</button>
+            <button onclick="appendToInput('-')">-</button>
+            <button onclick="appendToInput('0')">0</button>
+            <button class="equals" onclick="calculate()">=</button>
+            <button class="clear" onclick="clearInput()">AC</button>
+            <button onclick="appendToInput('+')">+</button>
+        </div>
+        <h2>Vēsture:</h2>
+        <ul id="history"></ul>
+        <button class="clear-history" onclick="clearHistory()">Dzēst Vēsturi</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
